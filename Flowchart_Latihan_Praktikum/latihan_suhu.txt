@@ -1,0 +1,12 @@
+Algoritma Konversi Suhu
+
+KAMUS DATA:
+    celcius    : real
+    fahrenheit : real
+
+ALGORITMA:
+Langkah 1 : TAMPILKAN "Masukan suhu dalam Celcius"
+Langkah 2 : fahrenheit <- (celcius * 9 / 5) + 32
+Langkah 3 : TAMPILKAN "Suhu dalam fahrenheit
+
+SELESAI
