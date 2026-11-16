@@ -1,21 +1,17 @@
 PROGRAM Konversi_Waktu_Maraton 
 KAMUS: 
-total_detik 
-jam  
-sisa_detik 
-menit  
-detik  
-: integer 
-: integer 
-: integer 
-: integer 
-: integer 
+ total_detik : integer
+ jam         : integer
+ sisa_detik  : integer
+ menit       : integer
+ detik       : integer 
+ 
 ALGORITMA: 
-read(total_detik) 
-jam <- total_detik DIV 3600 
-sisa_detik <- total_detik MOD 3600 
-menit <- sisa_detik DIV 60 
-detik <- sisa_detik MOD 60 
-write(jam) 
-write(menit) 
-write(detik) 
+ read(total_detik) 
+ jam <- total_detik DIV 3600 
+ sisa_detik <- total_detik MOD 3600 
+ menit <- sisa_detik DIV 60 
+ detik <- sisa_detik MOD 60 
+ write(jam) 
+ write(menit) 
+ write(detik) 
