@@ -1,0 +1,24 @@
+PROGRAM Hitung_Gaji_Bersih
+
+DEKLARASI
+ nama_karyawan : string
+ gaji_pokok    : real
+ tunjangan     : real
+ total_gaji    : real 
+ pajak         : real
+ gaji_bersih   : real
+
+ALGORIMNA
+ read(nama_karyawan)
+ read(gaji_pokok)
+
+ tunjangan <- gaji pokok * 0.20
+ total_pendapatan <- gaji_pokok + tunjangan
+ pajak <- total_pendapatan * 0.10
+ gaji_bersih <- total_pendapatan - pajak
+
+ write(nama_karyawan)
+ write(tunjangan)
+ write(total_pendapatan)
+ write(pajak)
+ write(gaji_bersih)
