@@ -1,0 +1,35 @@
+PROGRAM Kalkulator_Split_Bill
+
+KAMUS   
+    nama_Perwakilan     : string
+    total_harga_makanan : real
+    jumlah_orang        : integer
+    pajak               : real
+    biaya_layanan       : real
+    total_biaya_akhir   : real
+    tagihan_per_orang   : real
+
+ALGORITMA
+    write("Masukkan Nama Perwakilan Meja:")
+    read(nama_perwakilan)
+
+    write("Masukan Total Harga Makanan:")
+    read(total_harga_makanan)
+
+    write("Masukan Jumlah Orang:")
+    read(jumlah_orang)
+
+    pajak <- total_harga_makanan * 11 / 100
+
+    biaya_layanan <- total_harga_makanan * 5 / 100
+     
+    total_bayar_akhir <- total_harga_makanan + pajak + biaya_layanan
+
+    tagihan_per_orang <- total_bayar_akhir / jumlah_orang
+
+    write("Nama Perwakilan Meja:", nama_perwakilan)
+    write("Total Bayar Akhir:", total_bayar_akhir)
+    write("Tagihan Per Orang:", tagihan_per_orang)
+
+SELESAI
+
